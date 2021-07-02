@@ -1,8 +1,3 @@
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Locale;
-
 /*
 *  #### BASIC ALGORITHMS IN JAVA  ####
 *
@@ -12,10 +7,6 @@ import java.util.Locale;
 * */
 
 public class Main {
-
-    // find a minimum number in the list -1
-    static int  minNum;
-
     // find first recursive character -2.1
     static int count;
 
@@ -28,7 +19,30 @@ public class Main {
         //findFirstReq("fdasdfdsa");
 
         //find last recursive character -2.2
-        findLastReq("aajksdfdszaa");
+       // findLastReq("aajksdfdszaa");
+
+
+
+        /*
+        * find specific number from array using binary tree algorithm
+        *
+        * */
+//        int[] arr={1,4,10,3,20,5,11,6};
+//
+//        BinaryTree binaryTree=new BinaryTree();
+//
+//        int num=binaryTree.find(arr,0,arr.length,10);
+//
+//        System.out.println("position == "+num);
+
+
+        /*
+        * find minimum number from list
+        *
+        * */
+       FindMaximumNumber findMaximumNumber=new FindMaximumNumber();
+       int minNum=findMaximumNumber.findMin(122,34,54,2,87,9,634);
+       System.out.println("Minimum number is == "+minNum);
 
 
     }
@@ -96,30 +110,6 @@ public class Main {
             }
 
         }
-
-    }
-
-    // find a minimum number in the list -1 answer
-    private static void findMin(int i7, int i1, int i2, int i3, int i4, int i5, int i6) {
-        List<Integer> list1=new ArrayList<>();
-        list1.add(i7);
-        list1.add(i1);
-        list1.add(i3);
-        list1.add(i4);
-        list1.add(i5);
-        list1.add(i6);
-
-        for(int i=1;i<list1.toArray().length;i++)
-        {
-            int min=0;
-            if(list1.get(i-1) > list1.get(i))
-            {
-               minNum=min=list1.get(i);
-            }
-        }
-
-        System.out.println("minimum number is ==== >  "+minNum);
-
 
     }
 }
