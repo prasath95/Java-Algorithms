@@ -40,9 +40,19 @@ public class Main {
         * find minimum number from list
         *
         * */
-       FindMaximumNumber findMaximumNumber=new FindMaximumNumber();
-       int minNum=findMaximumNumber.findMin(122,34,54,2,87,9,634);
-       System.out.println("Minimum number is == "+minNum);
+//       FindMaximumNumber findMaximumNumber=new FindMaximumNumber();
+//       int minNum=findMaximumNumber.findMin(122,34,54,2,87,9,634);
+//       System.out.println("Minimum number is == "+minNum);
+
+        int[] arr={1,4,3,2,5,65,6,7,89};
+
+        FindMaximumNumber findMaximumNumber=new FindMaximumNumber();
+       // int output=findMaximumNumber.findMax(arr);
+       // System.out.println("output "+output);
+
+        ///
+        int output2=findMaximumNumber.findMin(arr);
+        System.out.println("output "+output2);
 
 
     }
