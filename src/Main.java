@@ -12,47 +12,20 @@ public class Main {
 
     public static void main(String[] args) {
 
-       // find  minimum number in the list -1
-      //  findMin(5,2,3,1,6,7,9);
-
-        // find first recursive character -2.1
-        //findFirstReq("fdasdfdsa");
-
-        //find last recursive character -2.2
-       // findLastReq("aajksdfdszaa");
-
-
-
-        /*
-        * find specific number from array using binary tree algorithm
-        *
-        * */
-//        int[] arr={1,4,10,3,20,5,11,6};
-//
-//        BinaryTree binaryTree=new BinaryTree();
-//
-//        int num=binaryTree.find(arr,0,arr.length,10);
-//
-//        System.out.println("position == "+num);
-
-
-        /*
-        * find minimum number from list
-        *
-        * */
-//       FindMaximumNumber findMaximumNumber=new FindMaximumNumber();
-//       int minNum=findMaximumNumber.findMin(122,34,54,2,87,9,634);
-//       System.out.println("Minimum number is == "+minNum);
-
         int[] arr={1,4,3,2,5,65,6,7,89};
 
-        FindMaximumNumber findMaximumNumber=new FindMaximumNumber();
+        //FindMaxMin findMaximumNumber=new FindMaxMin();
        // int output=findMaximumNumber.findMax(arr);
        // System.out.println("output "+output);
 
-        ///
-        int output2=findMaximumNumber.findMin(arr);
-        System.out.println("output "+output2);
+        //
+        // int output2=findMaximumNumber.findMin(arr);
+       // System.out.println("output "+output2);
+
+        //
+       // findMaximumNumber.findMaxAndMin(arr);
+
+        BubbleSort.bubbleSort(arr);
 
 
     }
