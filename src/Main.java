@@ -6,6 +6,8 @@
 *
 * */
 
+import java.util.Arrays;
+
 public class Main {
     // find first recursive character -2.1
     static int count;
@@ -25,7 +27,11 @@ public class Main {
         //
        // findMaximumNumber.findMaxAndMin(arr);
 
-        BubbleSort.bubbleSort(arr);
+//        BubbleSort.bubbleSort(arr);
+//        System.out.println(Arrays.toString(arr));
+
+        QuickSort.quickSortf(arr,0,arr.length-1);
+        System.out.println(Arrays.toString(arr));
 
 
     }

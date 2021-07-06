@@ -9,7 +9,7 @@ public class BubbleSort {
         {
             for(j=0;j<list.length-1-i;j++)
             {
-                if(list[j]<list[j+1])
+                if(list[j]>list[j+1])
                 {
                     temp=list[j];
                     list[j]=list[j+1];
