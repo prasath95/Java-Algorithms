@@ -1,5 +1,6 @@
 public class BinaryTree {
 
+    //s - searching element
     public int find(int[] myarray,int l,int r, int s)
     {
 
